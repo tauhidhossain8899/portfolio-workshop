@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6fb;
+  color: #1f2937;
+  line-height: 1.6;
+}
+a {
+  color: inherit;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+.navbar {
+  min-height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar h2 {
+  margin: 0;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav-links a:hover {
+  text-decoration: underline;
+}
+.hero {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.hero h1 {
+  margin: 5px 0;
+  font-size: clamp(2.2rem, 6vw, 4.5rem);
+  line-height: 1.1;
+}
+.hero p {
+  font-size: 1.1rem;
+}
+.small-heading {
+  font-weight: bold;
+}
+.primary-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #1f2937;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+section {
+  margin: 70px 0;
+}
+section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+.skills-list li {
+  padding: 10px 16px;
+  background: #dbeafe;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.project-card {
+  padding: 22px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+.project-card h3 {
+  margin-top: 0;
+}
+.project-links {
+  display: flex;
+  gap: 15px;
+}
+.project-links a {
+  font-weight: bold;
+}
+.contact-form {
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-form label {
+  font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font: inherit;
+}
+.contact-form button {
+  margin-top: 8px;
+  padding: 13px;
+  border: none;
+  border-radius: 7px;
+  background: #1f2937;
+
+  color: white;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+.contact-form button:hover,
+.primary-button:hover {
+  opacity: 0.85;
+}
+footer {
+  margin-top: 80px;
+  padding: 25px 0;
+  text-align: center;
+  border-top: 1px solid #d1d5db;
+  font-weight: bold;
+}
+@media (max-width: 650px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 0;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  .hero {
+    align-items: center;
+    text-align: center;
+  }
+}
